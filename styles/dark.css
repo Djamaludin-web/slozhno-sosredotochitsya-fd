@@ -3,16 +3,15 @@
   --accent-color: #ff0070;
   --text-size-m: 18px;
   --line-height: 23.4px;
-  --text-color: #F1B2CE;
-  --title-color: #DB00FF;
+  --text-color: #f1b2ce;
+  --title-color: #db00ff;
 }
-
 
 :root.theme-dark {
   --background-image: url("../images/cover-image-dark.png");
   --accent-color: #ff0070;
   --text-size-m: 18px;
   --line-height: 23.4px;
-  --text-color: #F1B2CE;
-  --title-color: #DB00FF;
+  --text-color: #f1b2ce;
+  --title-color: #db00ff;
 }
