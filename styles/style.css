@@ -11,8 +11,6 @@ p {
   background-size: cover;
   background-attachment: fixed;
   background-color: #000028;
-  padding-left: clamp(10px, 2.54vw + 0.46px, 20px);
-  padding-right: clamp(10px, 2.54vw + 0.46px, 20px);
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
@@ -74,6 +72,8 @@ p {
   height: 100vh;
   min-height: 668px;
   gap: 55px;
+  padding-left: clamp(10px, 2.54vw + 0.46px, 20px);
+  padding-right: clamp(10px, 2.54vw + 0.46px, 20px);
 }
 
 .header__theme-menu {
@@ -122,6 +122,8 @@ p {
   grid-template-columns: 1fr;
   row-gap: clamp(50px, 7.63vw + 21.37px, 80px);
   padding-top: clamp(40px, 5.09vw + 20.92px, 60px);
+  padding-left: clamp(10px, 2.54vw + 0.46px, 20px);
+  padding-right: clamp(10px, 2.54vw + 0.46px, 20px);
 }
 
 .content__details {
