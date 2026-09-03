@@ -216,6 +216,7 @@ img {
   .head-text {
     justify-self: end;
     max-width: 364px;
+    margin-top: 1%;
   }
 
   .content__title {
@@ -294,6 +295,7 @@ img {
   .card-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: start; 
   }
 
   .regular-list {
