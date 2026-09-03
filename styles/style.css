@@ -52,15 +52,15 @@ p {
 .decorated-zone::after {
   bottom: 10px; /* Делаем отступ от нижнего края шапки */
   left: 10px;
-  border-bottom-color: var(--accent-color);
-  border-left-color: var(--accent-color);
+  border-bottom-color: var(--content-title-color);
+  border-left-color: var(--content-title-color);
 }
 
 .decorated-zone::before {
   top: 10px; /* Делаем отступ от края, такой же как у элемента REC */
   right: 10px;
-  border-top-color: var(--accent-color);
-  border-right-color: var(--accent-color);
+  border-top-color: var(--content-title-color);
+  border-right-color: var(--content-title-color);
   display: inline-flex;
   gap: 9px;
 }
@@ -89,7 +89,7 @@ p {
   line-height: 18px;
   font-size: var(--text-size-m);
   padding-right: 7px;
-  color: var(--accent-color);
+  color: var(--content-title-color);
 }
 
 .header__theme-menu-item {
@@ -148,7 +148,7 @@ p {
 .content__title {
   font-size: var(--text-size-m);
   line-height: var(--line-height);
-  color: var(--accent-color);
+  color: var(--content-title-color);
 }
 
 .card-list {

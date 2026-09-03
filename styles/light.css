@@ -6,6 +6,7 @@
     --line-height: 23.4px;
     --text-color: #353430;
     --title-color: #ffc2e6;
+    --content-title-color: #353430;
   }
 
   .decorated__item {
@@ -20,6 +21,7 @@
   --line-height: 23.4px;
   --text-color: #353430;
   --title-color: #ffc2e6;
+  --content-title-color: #353430;
 
   .decorated__item {
     display: none;
