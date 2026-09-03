@@ -206,6 +206,7 @@ img {
 
 .header__theme-menu-button_active {
   pointer-events: none;
+  outline: 1px solid var(--content-title-color);
 }
 
 @media (width >= 768px) {
