@@ -10,7 +10,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-color: #000028;
+  background-color: var(--background-color);
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
