@@ -26,6 +26,7 @@ p {
 p {
   font-size: var(--text-size-m);
   line-height: var(--line-height);
+  color: var(--text-color);
 }
 
 ul {
@@ -47,4 +48,12 @@ a {
   line-height: inherit;
   background-color: transparent;
   border: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }

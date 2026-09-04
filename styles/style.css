@@ -1,9 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-p {
-  color: var(--text-color);
-}
-
 .page {
   background-image: var(--background-image);
   background-position: center;
@@ -50,15 +46,15 @@ p {
 }
 
 .decorated-zone::after {
-  bottom: 10px; /* Делаем отступ от нижнего края шапки */
-  left: 10px;
+  bottom: clamp(10px, 0.46px + 2.55vw, 20px);
+  left: clamp(10px, 0.46px + 2.55vw, 20px);
   border-bottom-color: var(--content-title-color);
   border-left-color: var(--content-title-color);
 }
 
 .decorated-zone::before {
-  top: 10px; /* Делаем отступ от края, такой же как у элемента REC */
-  right: 10px;
+  top: clamp(10px, 0.46px + 2.55vw, 20px);
+  right: clamp(10px, 0.46px + 2.55vw, 20px);
   border-top-color: var(--content-title-color);
   border-right-color: var(--content-title-color);
   display: inline-flex;
@@ -94,6 +90,7 @@ p {
 
 .header__theme-menu-item {
   background-color: transparent;
+  transition: all 0.3s ease;
 }
 
 .title {
@@ -109,15 +106,20 @@ p {
   background-color: var(--accent-color);
   line-height: var(--line-height);
   font-size: var(--text-size-m);
-  color: #000028;
+  color: var(--title-text-color);
   font-weight: 700;
-  white-space: pre-line;
+  white-space: wrap;
   align-self: start;
+}
+
+.head-text {
+  min-width: 355px;
+  max-height: 117px;
 }
 
 /* ============ MAIN: сетка секций ============ */
 
-.content {
+.section {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: clamp(50px, 7.63vw + 21.37px, 80px);
@@ -126,14 +128,13 @@ p {
   padding-right: clamp(10px, 2.54vw + 0.46px, 20px);
 }
 
-.content__details {
+.section__details {
   display: grid;
   gap: 20px;
 }
 
 .link_soruce {
-  text-shadow: 2px 1px 0.5px var(--accent-color);
-  color: #f1b2ce;
+  text-shadow: 2px 1px 0.5px var(--link-shadow-color);
   text-decoration: none;
 }
 
@@ -177,14 +178,6 @@ p {
   gap: clamp(10px, 2.54vw + 0.46px, 20px);
 }
 
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-}
-
 .footer {
   display: grid;
   position: relative;
@@ -207,9 +200,15 @@ img {
 .header__theme-menu-button_active {
   pointer-events: none;
   outline: 1px solid var(--content-title-color);
+  outline-offset: 2px; 
 }
 
 @media (width >= 768px) {
+
+  .title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
   .head-title {
     margin-left: calc(50% - 50vw);
   }
@@ -217,7 +216,7 @@ img {
   .head-text {
     justify-self: end;
     max-width: 364px;
-    margin-top: 1%;
+    margin-top: 0.75%;
   }
 
   .content__title {
@@ -230,7 +229,7 @@ img {
     grid-column: 2;
   }
 
-  .section-rows {
+  .section-causes {
     grid-template-rows: 1fr max-content;
   }
 
@@ -238,7 +237,7 @@ img {
     grid-template-rows: auto;
   }
 
-  .section-regular {
+  .section-advices {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
   }
@@ -268,13 +267,11 @@ img {
   }
 }
 @media (width >= 1024px) {
-  .title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
 
   .head-text {
     justify-self: end;
     max-width: 491px;
+    margin-top: 1.55%;
   }
 
   .header__theme-menu {
@@ -302,4 +299,8 @@ img {
   .regular-list {
     grid-template-columns: 1fr;
   }
+
+  .section-advices {
+      grid-template-columns: 1fr 2.06fr;
+      grid-template-rows: auto;
 }

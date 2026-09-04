@@ -8,6 +8,8 @@
     --title-color: #ffc2e6;
     --content-title-color: #353430;
     --background-color: #FFEEF6;
+    --link-shadow-color: #FF8DCB;
+    --title-text-color: #353430;
   }
 
    .decorated__item {
@@ -24,6 +26,8 @@
   --title-color: #ffc2e6;
   --content-title-color: #353430;
   --background-color: #FFEEF6;
+  --link-shadow-color: #FF8DCB;
+  --title-text-color: #353430;
 
   .decorated__item {
     display: none;
