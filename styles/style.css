@@ -166,6 +166,11 @@
   gap: 10px;
 }
 
+.advices__card-list {
+  display: grid;
+  gap: 20px;
+}
+
 .content__pictures {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -266,6 +271,7 @@
     grid-column: 2 / 4;
   }
 }
+
 @media (width >= 1024px) {
 
   .head-text {
@@ -303,4 +309,5 @@
   .section-advices {
       grid-template-columns: 1fr 2.06fr;
       grid-template-rows: auto;
+}
 }
